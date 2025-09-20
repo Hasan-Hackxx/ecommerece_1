@@ -1,10 +1,14 @@
 import 'package:ecommerece_app1/compoents/mybutton.dart';
+import 'package:ecommerece_app1/models/shop.dart';
 import 'package:ecommerece_app1/pages/cartPage.dart';
 import 'package:ecommerece_app1/pages/shopPage.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(create: (context) => Shop(), child: const MyApp()),
+  );
 }
 
 class MyApp extends StatelessWidget {

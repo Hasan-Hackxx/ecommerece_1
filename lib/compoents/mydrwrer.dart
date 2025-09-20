@@ -35,6 +35,7 @@ class _MydrwrerState extends State<Mydrwrer> {
                 ),
                 leading: Icon(Icons.shopping_cart),
                 onTap: () {
+                  Navigator.pop(context);
                   Navigator.pushNamed(context, '/cartPage/');
                 },
               ),
