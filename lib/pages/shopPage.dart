@@ -24,6 +24,14 @@ class _ShoppageState extends State<Shoppage> {
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
         ),
         backgroundColor: const Color.fromARGB(255, 223, 221, 221),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/cartPage/');
+            },
+            icon: Icon(Icons.shopping_cart_outlined),
+          ),
+        ],
       ),
       drawer: Mydrwrer(),
       body: ListView(

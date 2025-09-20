@@ -4,10 +4,30 @@ import 'package:flutter/material.dart';
 class Shop extends ChangeNotifier {
   //products for sale
   final List<Product> _shop = [
-    Product(name: 'product 1', price: 999.9, desciprtion: 'Item description'),
-    Product(name: 'product 2', price: 999.9, desciprtion: 'Item description'),
-    Product(name: 'product 3', price: 999.9, desciprtion: 'Item description'),
-    Product(name: 'product 4', price: 999.9, desciprtion: 'Item description'),
+    Product(
+      name: 'product 1',
+      price: 999.9,
+      desciprtion: 'Item description',
+      imagePath: 'assests/glasses.jpg',
+    ),
+    Product(
+      name: 'product 2',
+      price: 999.9,
+      desciprtion: 'Item description',
+      imagePath: 'assests/shirt.jpg',
+    ),
+    Product(
+      name: 'product 3',
+      price: 999.9,
+      desciprtion: 'Item description',
+      imagePath: 'assests/shoes.jpg',
+    ),
+    Product(
+      name: 'product 4',
+      price: 999.9,
+      desciprtion: 'Item description',
+      imagePath: 'assests/watch.jpg',
+    ),
   ];
 
   // user cart
